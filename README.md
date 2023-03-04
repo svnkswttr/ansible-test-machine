@@ -16,7 +16,7 @@ How I made my laptop an ansible all-in-one machine
 5.) extract the installer: 
     tar xfv ansible-tower-setup-bundle-3.8.6-2.tar.gz && cd ansible-tower-setup-bundle-3.8.6-2
 
-6.) edit the inventory file and enter a password for the admin_passowrd and the pg_password
+6.) edit the inventory file and enter a password for admin_passowrd the pg_password
 
 7.) start the install by using the setup.sh
 
@@ -33,11 +33,12 @@ How I made my laptop an ansible all-in-one machine
 3.) sudo yum install gitlab-ce
 
 4.) sudo vi /etc/gitlab/gitlab.rb:
-    add your DNS name and desiered port (to have no conflicht on 80 where tower runs) 
+    add your DNS name and desiered port (to have no conflicht on 80 where tower runs). Take care of SELinux and firewalld!
     external_url 'http://localhost:8888'
 5.) apply the config: sudo gitlab-ctl reconfigure
 6.) wait
 7.) get the initial root password for gitlab by sudo cat /etc/gitlab/initial_root_password 
+8.) Login to GL and change the password.
 
 Now set up your gitlab as needed. Do the same for tower.
 
