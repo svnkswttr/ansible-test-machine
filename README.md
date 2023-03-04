@@ -6,12 +6,15 @@ How I made my laptop an ansible all-in-one machine
 
 2.) Install RHEL8 GUI-Server on your machine
 
-3.) Install a few prereqs: yum -y install wget tar
+3.) Install a few prereqs: 
+    yum -y install wget tar
 
 4.) download Ansible Tower (bundled installer) from here: https://releases.ansible.com/ansible-tower/setup-bundle/
+
     cd /opt && wget https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-3.8.6-2.tar.gz
 
-5.) extract the installer: tar xfv ansible-tower-setup-bundle-3.8.6-2.tar.gz && cd ansible-tower-setup-bundle-3.8.6-2
+5.) extract the installer: 
+    tar xfv ansible-tower-setup-bundle-3.8.6-2.tar.gz && cd ansible-tower-setup-bundle-3.8.6-2
 
 6.) edit the inventory file and enter a password for the admin_passowrd and the pg_password
 
