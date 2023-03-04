@@ -42,4 +42,4 @@ How I made my laptop an ansible all-in-one machine
 Now set up your gitlab as needed. Do the same for tower.
 
 Optionally you can install VirtualBox and Hashicorp vagrant on the machine as well. 
-So you will have an environment that is rebuilt easyly.
+So you will have an environment that is rebuilt easy.
